@@ -1,0 +1,29 @@
+class Circulo {
+  //Propiedades
+
+  // "late" le indica a clase, que la propiedad, tendrá un valor en el futuro
+  // late String nombre;
+  late int radio;
+  late String color; 
+  
+  Circulo() {
+  this.radio = 3;
+  this.color = "Verde";
+  }
+  }
+
+void main() {
+  Circulo circulo = new Circulo();
+  print(circulo.color);
+  print(circulo.radio);
+  print(Area(3));
+  print(Perimetro(2));
+}
+
+double Area(double radio) {
+  return 3.1416 * radio * radio;
+}
+double Perimetro(double radio) {
+  return 3.1416 * radio * 2;
+}
+  

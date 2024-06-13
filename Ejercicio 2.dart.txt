@@ -1,0 +1,41 @@
+class Clase {
+  //Propiedades
+
+  // "late" le indica a clase, que la propiedad, tendrá un valor en el futuro
+  // late String nombre;
+  late String titulo;
+  late String descripcion; 
+  late String estado;
+  
+  Tareas(String) {
+  this.titulo = "PROGRAMACION";
+  this.descripcion = "programaremos cosas";
+  this.estado = "Entregado";
+  }
+  }
+
+
+void main() {
+  //Listas
+
+  final List<String?> tareas = [
+    'Correr',
+    'Saltar',
+    'Llorar',
+    'Nadar',
+    'Volar'
+  ];
+
+  tareas.add("Programar");
+ 
+  final copia_tareas = [...tareas]; // ✅ si es una copia
+
+  tareas.remove('Correr');
+  
+  for (final tarea in tareas) {
+    print(tarea);
+    
+  }
+  }
+
+ E
